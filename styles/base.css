@@ -1,0 +1,120 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GOOGLE FONT EXAMPLE (you can change fonts if needed) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* HEADER */
+header {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+}
+
+/* Course title span must be block */
+#course-title {
+    display: block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* NAVIGATION FLEX */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2e2e2e;
+}
+
+/* NAV LINKS */
+nav a {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+nav a:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* MAIN LAYOUT */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+/* PAGE TITLE */
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* CARDS */
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* IMAGES */
+.card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+/* LIST STYLE */
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card ul li {
+    margin: 0.5rem 0;
+}
+
+/* LINKS IN CARD */
+.card a {
+    color: #1f4e79;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1f4e79;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* LAST MODIFIED TEXT */
+#lastModified {
+    font-size: 0.8rem;
+    color: #ddd;
+}
