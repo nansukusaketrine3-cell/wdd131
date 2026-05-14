@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nansukusa Ketrine | Book of Mormon | WDD131</title>
+    <title>Book of Mormon | WDD131</title>
+
+    <link rel="stylesheet" href="styles/boom.css">
 </head>
+
 <body>
     <h1>📖 Book of Mormon - Top 10</h1>
+
     <main>
-        <label for="favchap">Enter Book and Chapter: </label>
-        <input type="text" id="favchap" placeholder="Alma 5">
-        <button aria-label="Close" id="close-button">X</button>
-        <ul id="list"></ul>
+        <div class="input">
+            <label for="favchap">Enter Book and Chapter:</label>
+            <input type="text" id="favchap" placeholder="Alma 5">
+        </div>
+
+        <button id="addBtn">Add Chapter</button>
+
+        <div class="list">
+            <ul id="list"></ul>
+        </div>
     </main>
+
+    <script src="scripts/boom.js"></script>
 </body>
 </html>
