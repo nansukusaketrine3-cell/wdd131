@@ -15,12 +15,12 @@
 
     /* NAVIGATION (DESKTOP VIEW) */
     .nav {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         gap: 1rem;
-        align-items: center;
+        opacity: 1;
+        transform: none;
     }
-
     /* NAV LINKS (optional polish for desktop) */
     .nav a {
         padding: 0.5rem 1rem;
