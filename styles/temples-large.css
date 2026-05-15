@@ -5,21 +5,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1rem 2rem;
     }
 
-    /* HIDE HAMBURGER */
+    /* HIDE HAMBURGER MENU */
     #menu {
         display: none;
     }
 
-    /* NAVIGATION */
+    /* NAVIGATION (DESKTOP VIEW) */
     .nav {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        align-items: center;
     }
 
-    /* GRID LAYOUT */
+    /* NAV LINKS (optional polish for desktop) */
+    .nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    /* GRID LAYOUT (TABLET/DESKTOP) */
     .home-images {
         grid-template-columns: repeat(3, 1fr);
     }

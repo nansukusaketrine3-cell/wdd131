@@ -20,18 +20,39 @@ header {
     text-align: center;
 }
 
+/* SITE TITLE */
+.site-title {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
 /* NAVIGATION */
 nav {
     margin-top: 1rem;
 }
 
+/* MOBILE NAV (default hidden) */
 .nav {
     display: none;
     flex-direction: column;
     list-style: none;
     gap: 1rem;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
 }
 
+/* SHOW MENU */
+.nav.open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* NAV LINKS */
 .nav a {
     display: block;
     text-decoration: none;
@@ -45,6 +66,31 @@ nav {
 /* HOVER EFFECT */
 .nav a:hover {
     background-color: #1b2735;
+}
+
+.nav a:focus {
+    outline: 2px solid white;
+}
+
+/* HAMBURGER BUTTON */
+#menu {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+}
+
+/* HAMBURGER ICON */
+#menu::before {
+    content: "☰";
+}
+
+/* CLOSE ICON */
+#menu.open::before {
+    content: "✖";
 }
 
 /* MAIN */
@@ -67,7 +113,7 @@ main h1 {
     gap: 1.5rem;
 }
 
-/* FIGURE */
+/* FIGURE CARD */
 figure {
     background-color: white;
     border-radius: 10px;
@@ -96,44 +142,4 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-}
-
-.site-title {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1rem;
-}
-
-/* HAMBURGER BUTTON */
-#menu {
-    font-size: 2rem;
-    border: none;
-    background: none;
-    color: white;
-    cursor: pointer;
-}
-
-/* HAMBURGER ICON */
-#menu::before {
-    content: "☰";
-}
-
-/* CLOSE ICON */
-#menu.open::before {
-    content: "✖";
-}
-
-/* MOBILE NAV */
-.nav {
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    gap: 1rem;
-}
-
-/* SHOW MENU */
-.nav.open {
-    display: flex;
 }
