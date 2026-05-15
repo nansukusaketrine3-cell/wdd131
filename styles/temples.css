@@ -1,3 +1,15 @@
+/* =========================
+   COLOR SYSTEM (THEME)
+========================= */
+:root {
+    --primary: #2d3e50;
+    --primary-dark: #1b2735;
+    --secondary: #445d78;
+    --background: #f4f4f4;
+    --text: #222;
+    --white: #ffffff;
+}
+
 /* RESET */
 * {
     margin: 0;
@@ -8,14 +20,14 @@
 /* BODY */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 /* HEADER */
 header {
-    background-color: #2d3e50;
-    color: white;
+    background-color: var(--primary);
+    color: var(--white);
     padding: 1rem;
     text-align: center;
 }
@@ -56,8 +68,8 @@ nav {
 .nav a {
     display: block;
     text-decoration: none;
-    background-color: #445d78;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--white);
     padding: 0.75rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -65,11 +77,12 @@ nav {
 
 /* HOVER EFFECT */
 .nav a:hover {
-    background-color: #1b2735;
+    background-color: var(--primary-dark);
 }
 
+/* FOCUS ACCESSIBILITY */
 .nav a:focus {
-    outline: 2px solid white;
+    outline: 2px solid var(--white);
 }
 
 /* HAMBURGER BUTTON */
@@ -77,7 +90,7 @@ nav {
     font-size: 2rem;
     border: none;
     background: none;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     padding: 0.5rem;
     line-height: 1;
@@ -115,7 +128,7 @@ main h1 {
 
 /* FIGURE CARD */
 figure {
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
@@ -137,8 +150,8 @@ figcaption {
 
 /* FOOTER */
 footer {
-    background-color: #2d3e50;
-    color: white;
+    background-color: var(--primary);
+    color: var(--white);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
