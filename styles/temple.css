@@ -1,0 +1,146 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background-color: #2d3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* TITLE */
+header text {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 1rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    background-color: #445d78;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.nav a:hover {
+    background-color: #1b2735;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* GRID LAYOUT */
+.home-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* FIGURE */
+figure {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    text-align: center;
+}
+
+/* IMAGE */
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CAPTION */
+figcaption {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HAMBURGER BUTTON */
+#menu {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* HAMBURGER ICON */
+#menu::before {
+    content: "☰";
+}
+
+/* CLOSE ICON */
+#menu.open::before {
+    content: "✖";
+}
+
+/* MOBILE NAV */
+.nav {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+}
+
+/* SHOW MENU */
+.nav.open {
+    display: flex;
+}
