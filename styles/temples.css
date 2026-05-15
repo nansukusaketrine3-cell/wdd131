@@ -20,25 +20,16 @@ header {
     text-align: center;
 }
 
-/* TITLE */
-header text {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
 /* NAVIGATION */
 nav {
     margin-top: 1rem;
 }
 
 .nav {
-    display: flex;
+    display: none;
     flex-direction: column;
     list-style: none;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .nav a {
@@ -108,9 +99,11 @@ footer {
 }
 
 .site-title {
+    display: block;
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
 }
 
 /* HAMBURGER BUTTON */
