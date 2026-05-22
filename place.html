@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nansukusa Ketrine | Place Page | WDD 131</title>
+
+    <meta name="description" content="Place page project created by Nansukusa Ketrine for WDD 131 Dynamic Web Fundamentals.">
+    <meta name="author" content="Nansukusa Ketrine">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Uganda - The Pearl of Africa</h1>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero">
+
+            <!-- Responsive Hero Image -->
+            <picture>
+                <!-- Large screen image -->
+                <source 
+                    media="(min-width: 768px)" 
+                    srcset="images/uganda-large.webp">
+
+                <!-- Small screen image -->
+                <img 
+                    src="images/uganda-small.webp" 
+                    alt="Beautiful landscape in Uganda"
+                    loading="lazy">
+            </picture>
+
+        </section>
+
+        <!-- DATA SECTION -->
+        <section class="data">
+            <h2>Data</h2>
+
+            <p><strong>Country:</strong> Uganda</p>
+            <p><strong>Capital:</strong> Kampala</p>
+            <p><strong>Population:</strong> 48 Million</p>
+            <p><strong>Language:</strong> English, Luganda</p>
+            <p><strong>Currency:</strong> Ugandan Shilling</p>
+
+        </section>
+
+        <!-- WEATHER SECTION -->
+        <section class="weather">
+
+            <h2>Weather</h2>
+
+    <!-- SVG icon for mobile -->
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong><span id="temperature">8</span> °C</p>
+
+            <p><strong>Conditions:</strong>Partly Cloudy</p>
+
+            <p><strong>Wind Speed:</strong><span id="windspeed">12</span> km/h</p>
+
+            <p><strong>Wind Chill:</strong><span id="windchill"></span></p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 
+            🌸 Nansukusa Ketrine 🌸 Uganda
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

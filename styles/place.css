@@ -1,0 +1,116 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS VARIABLES */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FCDC04;
+    --accent-color: #D90000;
+    --background-color: #f4f4f4;
+    --text-color: #222;
+    --white: #ffffff;
+
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* HERO */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* MAIN SECTIONS */
+.data,
+.weather {
+    background-color: var(--white);
+    margin: 1rem;
+    padding: 1.5rem;
+    border-left: 8px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+h2 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+/* WEATHER ICON */
+.weather-icon {
+    width: 60px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* LARGE SCREEN */
+@media screen and (min-width: 768px) {
+
+    main {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        width: 300px;
+        background-color: rgba(255,255,255,0.9);
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 40px;
+        right: 20px;
+        width: 300px;
+        background-color: rgba(255,255,255,0.9);
+    }
+
+    /* Hide SVG icon on larger screens */
+    .weather-icon {
+        display: none;
+    }
+
+    /* PSEUDO ELEMENT WEATHER ICON */
+    .weather h2::after {
+        content: " ⛅";
+    }
+}
