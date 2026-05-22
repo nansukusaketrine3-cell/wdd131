@@ -20,7 +20,7 @@
 
 /* BODY */
 body {
-    font-family: var(--body-font);
+    font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
