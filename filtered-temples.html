@@ -1,7 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
+
+    <title>Nansukusa Ketrine | Temple Album | WDD 131</title>
+
+    <meta name="description" content="Temple Album project by Nansukusa Ketrine for WDD 131 featuring temple information and filtering options.">
+    <meta name="author" content="Nansukusa Ketrine">
 
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <script src="scripts/filtered-temples.js" defer></script>
@@ -9,8 +15,11 @@
 
 <body>
     <header>
-        <p class="site-title">Temple Album</p>
-        <button id="menu">☰</button>
+        <h1>Temple Album</h1>
+
+        <button id="menu" aria-label="Open navigation menu">
+            ☰
+        </button>
 
         <nav class="nav">
             <a href="#" id="home">Home</a>
@@ -22,12 +31,20 @@
     </header>
 
     <main>
-        <h1>Temple Album</h1>
-        <div class="temple-container"></div>
+        <h2>Temples</h2>
+
+        <section class="temple-container">
+            <!-- Temple cards will be inserted here by JavaScript -->
+        </section>
     </main>
 
     <footer>
-        <p>© <span id="currentyear"></span> Nansukusa Ketrine | Uganda</p>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Nansukusa Ketrine | Uganda
+        </p>
+
         <p id="lastModified"></p>
     </footer>
 </body>
+</html>

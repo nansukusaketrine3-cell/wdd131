@@ -60,8 +60,8 @@ const temples = [
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
   },
   {
-    templeName: "Lima Perú",
-    location: "Lima, Perú",
+    templeName: "Lima Peru",
+    location: "Lima, Peru",
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
@@ -76,11 +76,11 @@ const temples = [
 
   // FIXED DATA (clean + correct numbers)
   {
-    templeName: "Aba Nigeria",
-    location: "Nigeria",
-    dedicated: "2005, August, 7",
-    area: 6.3 * 43560,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    templeName: "Bacolod",
+    location: "philippines",
+    dedicated: " 31 May 2026",
+    area: 23.3 * 43560,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/bacolod-philippines-temple/bacolod-philippines-temple-70237-main.jpg"
   },
   {
     templeName: "Accra Ghana",
