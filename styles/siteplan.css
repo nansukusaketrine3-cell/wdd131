@@ -1,0 +1,154 @@
+/* =========================
+   RESET / BASE STYLES
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #F5F5F5; /* Light Gray */
+    color: #0F172A; /* Dark Blue text */
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: #0F172A; /* Dark Blue */
+    color: white;
+    padding: 1rem 0;
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+
+.nav a:hover {
+    color: #DC2626; /* Red */
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #DC2626; /* Red accent */
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    color: #0F172A;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    color: #DC2626;
+}
+
+/* =========================
+   LISTS
+========================= */
+ul {
+    margin-left: 1.5rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #0F172A;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* =========================
+   BUTTON STYLE (future use)
+========================= */
+button, .btn {
+    background-color: #DC2626;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover, .btn:hover {
+    background-color: #b91c1c;
+}
+
+/* Hide menu button on desktop */
+#menu {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    #menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #0F172A;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+}
