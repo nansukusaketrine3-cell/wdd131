@@ -122,3 +122,22 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+
+/* =========================
+   MEDIA QUERY
+========================= */
+@media screen and (max-width: 600px) {
+
+    form {
+        padding: 1rem;
+    }
+
+    fieldset label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}
