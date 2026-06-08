@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="This website is created by Nansukusa Ketrine for Dynamic Web Fundamentals (WDD131)">
+    <meta name="author" content="Nansukusa Ketrine">
+
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+
+        <form method="get" action="review.html">
+
+            <!-- PRODUCT NAME -->
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- OVERALL RATING -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <label for="rating1">
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+            ☆
+                </label>
+
+                <label for="rating2">
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    ☆☆
+                </label>
+
+                <label for="rating3">
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    ☆☆☆
+                    </label>
+
+                <label for="rating4">
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    ☆☆☆☆
+                </label>
+
+                <label for="rating5">
+                    <input type="radio" id="rating5" name="rating" value="5">
+                    ☆☆☆☆☆
+                </label>
+            </fieldset>
+
+            <!-- DATE -->
+            <label for="date">Date of Installation</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- FEATURES -->
+            <fieldset>
+                <legend>Which features did you find useful?</legend>
+
+                <label>
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    Durability
+                </label>
+
+                <label>
+                    <input type="checkbox" id="ease" name="features" value="ease-of-use">
+                    Ease of Use
+                </label>
+
+                <label>
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    Performance
+                </label>
+
+                <label>
+                    <input type="checkbox" id="design" name="features" value="design">
+                    Design
+                </label>
+            </fieldset>
+
+            <!-- WRITTEN REVIEW -->
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="5"></textarea>
+
+            <!-- USER NAME -->
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+            <!-- SUBMIT -->
+            <input type="submit" value="Post Review">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> WDD131 Student | Uganda
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

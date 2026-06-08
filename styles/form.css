@@ -1,0 +1,124 @@
+/* =========================
+   GOOGLE FONTS (use in HTML too)
+========================= */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #F5F5F5;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background-color: #2D0C3A;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* =========================
+   MAIN LAYOUT (CENTER FORM)
+========================= */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+form {
+    background: white;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   LABELS (PROXIMITY + CLARITY)
+========================= */
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/* =========================
+   INPUTS
+========================= */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* =========================
+   FIELDSETS (GROUPING = PROXIMITY)
+========================= */
+fieldset {
+    margin-top: 1.5rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2D0C3A;
+}
+
+/* =========================
+   RADIO + CHECKBOX LAYOUT
+========================= */
+fieldset label {
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: normal;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+input[type="submit"] {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    background-color: #F4B400;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2D0C3A;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+input[type="submit"]:hover {
+    background-color: #d99c00;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #2D0C3A;
+    color: white;
+    font-size: 0.9rem;
+}
