@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NANSUKUSA KETRINE | SUPERPLEX | WDD131</title>
+
+    <meta name="description" content="This website is created by Nansukusa Ketrine for Dynamic Web Fundamentals (WDD131)">
+    <meta name="author" content="Nansukusa Ketrine">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <img src="images/logo.jpg" alt="Superplex logo picture" class="logo">
+
+            <button id="menu" aria-label="Toggle navigation">☰</button>
+
+            <nav>
+                <ul class="nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+
+            <form id="contactForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="part">
+                    Spare Part Needed
+                </label>
+                <textarea id="part"></textarea>
+
+                <button type="submit">
+                    Submit Order Request
+                </button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Nansukusa Ketrine | Uganda</p>
+        <p id="lastModified"></p>
+
+        <nav>
+            <ul class="nav-f">
+                <li><a href="products.html">Contact Us</a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
